@@ -117,4 +117,9 @@ body {
         border-radius: 0px;
         background: black;
     }
+
+    .about {
+        top: 10%;
+        color: white;
+    }
 }
