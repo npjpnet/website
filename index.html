@@ -13,7 +13,9 @@
         <title>N-Point</title>
 
         <!-- CSS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
         <script>
             (function(d) {
@@ -27,10 +29,34 @@
         </script>
     </head>
     <body>
+        <script>
+            $(document).ready(function() {
+                $('.top-im').hide().fadeIn(1000);
+            });
+        </script>
         <div class="top-im">
             <img src="img/logo.png" width="auto" height="200px" /><br>
-            <font size="10">N-Point</font>
-            <h3>サイト公開までしばらくお待ち下さい</h3>
+            <font size="10">N-Point</font><br><br>
+            <span class="aboutb" onclick="$('.background').hide().fadeIn(1000);$('.about').hide().fadeIn(1000);">About</span>
+        </div>
+        <div class="background">
+        </div>
+        <div class="about">
+            <h1>N-Point とは</h1>
+            <p>
+                私達「N-Point」は、<br>
+                イベント管理・運営専門同人サークルです。<br>
+                IT/ゲーム/プログラミング教育に関するイベントを開催しています。
+            </p>
+            <h2>開催実績</h2>
+            <p>
+                2018年2月 MCC Talkoot<br>
+                2018年10月 Minecraft Coders Conference<br>
+                2018年10月 TENTOプレゼン大会2018<br>
+            </p>
+            <h2>問い合わせ先</h2>
+            <a href="https://twitter.com/nppw_" class="btn">Twitter</a><br><br>
+            <span class="close" onclick="$('.background').fadeOut(1000);$('.about').fadeOut(1000);"><i class="fas fa-window-close fa-4x"></i></span>
         </div>
     </body>
 </html>

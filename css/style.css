@@ -14,6 +14,70 @@ body {
 }
 
 .top-im {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+}
+
+.btn {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 0.5px solid white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    transition: 1s;
+    color: white;
+}
+
+.aboutb {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 0.5px solid white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    transition: 1s;
+    color: white;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    background: white;
+    color: black;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.aboutb:hover {
+    transition: 0.5s;
+    background: white;
+    color: black;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.background {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    display: none;
     position: fixed;
     top: 20%;
     left: 0%;
@@ -26,5 +90,31 @@ body {
     body {
         background: white;
         color: black;
+    }
+
+    .btn {
+        color: black;
+        border: 0.5px solid black;
+    }
+
+    .aboutb {
+        color: black;
+        border: 0.5px solid black;
+    }
+
+    .btn:hover {
+        color: white;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        background: black;
+    }
+
+    .aboutb:hover {
+        color: white;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        background: black;
     }
 }
