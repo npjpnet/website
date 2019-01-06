@@ -12,21 +12,12 @@
         <meta property="og:description" content="イベント管理・運営同人サークル「N-Point」のWebサイトです。" />
         <title>N-Point</title>
 
-        <!-- CSS -->
+        <!-- Program -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/typed.js"></script>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-        <script>
-            (function(d) {
-              var config = {
-                kitId: 'xtw4rkq',
-                scriptTimeout: 3000,
-                async: true
-              },
-              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-            })(document);
-        </script>
     </head>
     <body>
         <script>
@@ -36,9 +27,28 @@
         </script>
         <div class="top-im">
             <img src="img/logo.png" width="auto" height="200px" /><br>
+            <font size="5"><span id="typed1"></span>を、作る</font><br>
             <font size="10">N-Point</font><br><br>
-            <span class="aboutb" onclick="$('.background').hide().fadeIn(1000);$('.about').hide().fadeIn(1000);">About</span>
+            <span class="aboutb" onclick="$('.background').hide().fadeIn(1000);$('.about').hide().fadeIn(1000);">About</span>&nbsp;<span class="memberb" onclick="$('.background').hide().fadeIn(1000);$('.member').hide().fadeIn(1000);">Member</span>
         </div>
+        <script>
+            $(function() {
+                var typed1 = new Typed('#typed1', {
+                    strings: ["イベント", "ステージ", "笑顔", "発見", "知識", "盛り上がり", "笑い", "驚き", "イベント運営", "帰宅", "思い出", "夢"],
+                    typeSpeed: 50,
+                    startDelay: 0,
+                    backSpeed: 50,
+                    backDelay: 500,
+                    loop: false,
+                    cursorChar: "|",
+                    contentType: 'html',
+                    smartBackspace: true,
+                    fadeOut: false,
+                    fadeOutClass: 'typed-fade-out',
+                    fadeOutDelay: 250
+                });
+            });
+        </script>
         <div class="background">
         </div>
         <div class="about">
@@ -53,10 +63,80 @@
                 2018年2月 MCC Talkoot<br>
                 2018年10月 Minecraft Coders Conference<br>
                 2018年10月 TENTOプレゼン大会2018<br>
+                2019年11月 マイフェス2019
             </p>
             <h2>問い合わせ先</h2>
             <a href="https://twitter.com/nppw_" class="btn">Twitter</a><br><br>
             <span class="close" onclick="$('.background').fadeOut(1000);$('.about').fadeOut(1000);"><i class="fas fa-window-close fa-4x"></i></span>
+        </div>
+        <div class="member">
+            <h1>メンバー一覧（計16名）</h1>
+            <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/49260461_513145669192593_4429682488587059200_n.jpg?_nc_cat=109&_nc_ht=scontent-nrt1-1.xx&oh=ede560aac4c33eb8518e9cfc5daca0c3&oe=5CCA60FD" class="samune">
+            <h3>なああよ</h3>
+            <p>CEO</p>
+            <a href="https://twitter.com/shuhannn" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://facebook.com/nakagomeryo" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1068471214291611648/Kba9KOpC_400x400.jpg" class="samune">
+            <h3>音色ねいろ</h3>
+            <p>CTO・司会</p>
+            <a href="https://twitter.com/nirot1r" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://facebook.com/nirot1r" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1072628322859958273/vaWPKaJA_400x400.jpg" class="samune">
+            <h3>にぐとめあれ</h3>
+            <p>CVO(Chief Virtual Officer)・司会</p>
+            <a href="https://twitter.com/meare3317" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/profile.php?id=100027561930696" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1007483827579523072/Z-GY9zZ7_400x400.jpg" class="samune">
+            <h3>NaFFF</h3>
+            <p>CFO・企画・映像音響</p>
+            <a href="https://twitter.com/k4CI6fy" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1043179801345814528/Pjvvjpbb_400x400.png" class="samune">
+            <h3>かずにゃん</h3>
+            <p>企画・映像音響</p>
+            <a href="https://twitter.com/tearaikazuki_i" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/tearaikazuki" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1027904295599931392/aoJ5KR8P_400x400.jpg" class="samune">
+            <h3>TinyKitten</h3>
+            <p>システム技術担当</p>
+            <a href="https://twitter.com/tinykitten8" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/TinyKitten8" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/948450956156420096/j_BXof-y_400x400.jpg" class="samune">
+            <h3>アジにゃん</h3>
+            <p>システム技術担当</p>
+            <a href="https://twitter.com/azi_blueline" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1070636268197826560/DikiWayd_400x400.jpg" class="samune">
+            <h3>めしだ</h3>
+            <p>企画・広報担当・司会</p>
+            <a href="https://twitter.com/meshida_0217" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/profile.php?id=100013921354041" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1021390886200995840/jGuAe8Li_400x400.jpg" class="samune">
+            <h3>やはぎ</h3>
+            <p>広報担当</p>
+            <a href="https://twitter.com/yahagi_day" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/profile.php?id=100024416772630" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1081472037925793792/DEfzxKtE_400x400.jpg" class="samune">
+            <h3>アジョッタ</h3>
+            <p>映像音響</p>
+            <a href="https://twitter.com/ajyotta" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/profile.php?id=100004178734526" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1052586037887688704/p9Fe8N_u_400x400.jpg" class="samune">
+            <h3>むーくん</h3>
+            <p>広報担当</p>
+            <a href="https://twitter.com/muukunn0801" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1043885373473083394/0CywZ-4B_400x400.jpg" class="samune">
+            <h3>suzukeno</h3>
+            <p>システム技術担当</p>
+            <a href="https://twitter.com/suzukeno" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/564019778285621248/TUxokPaw_400x400.jpeg" class="samune">
+            <h3>おいねこ</h3>
+            <p>企画・広報担当</p>
+            <a href="https://twitter.com/KASIWA2001" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/2000tAIchi" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/952498532212080640/5JVkko5F_400x400.jpg" class="samune">
+            <h3>ウオアイ</h3>
+            <p>広報担当</p>
+            <br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1011625524626522118/HzdKcGV2_400x400.jpg" class="samune">
+            <h3>零坂麻琴</h3>
+            <p>総務・企画・広報担当</p>
+            <a href="https://twitter.com/0sakaKanjyosen" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-1/p320x320/41965074_1072191376280438_4353764401849827328_n.jpg?_nc_cat=107&_nc_ht=scontent-nrt1-1.xx&oh=9d6ad9396afa027fa48aa2758ce598e7&oe=5C8E6EC4" class="samune">
+            <h3>澤田　千代子</h3>
+            <p>監査</p>
+            <a href="https://twitter.com/chiyokosawada" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://www.facebook.com/chiyoko.sawada" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            
+            <span class="close" onclick="$('.background').fadeOut(1000);$('.member').fadeOut(1000);"><i class="fas fa-window-close fa-4x"></i></span><br><br><br>
         </div>
     </body>
 </html>
