@@ -25,6 +25,24 @@
                 $('.top-im').hide().fadeIn(1000);
             });
         </script>
+        <div id="video">
+            <iframe src="https://www.youtube.com/embed/O_x5WUaEAu0?playlist=O_x5WUaEAu0&autoplay=1&mute=1&loop=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <script>
+            var movieRatio = 16/9;  
+            function movieAdjust(){
+                var adjustWidth = $(window).width();
+                var adjustHeight = $(window).height();
+                if (adjustHeight > adjustWidth / movieRatio) {
+                    adjustWidth = adjustHeight * movieRatio;
+                }
+                $('iframe').css({width:(adjustWidth),height:(adjustWidth/movieRatio)});
+            }
+            $(window).on('load resize', function(){
+                movieAdjust();
+            });
+        </script>
+
         <div class="top-im">
             <img src="img/logo.png" width="auto" height="200px" /><br>
             <font size="5"><span id="typed1"></span>を、作る</font><br>
@@ -119,6 +137,33 @@
             <h3>ウオアイ</h3>
             <p>広報担当</p>
             <br><br><br>
+            <h1>メンバー募集中！</h1>
+            <p>
+                N-Pointで一緒に活動する仲間を随時募集しています。<br>
+            </p>
+            <h2>募集中の活動ジャンル</h2>
+            <h3>映像制作スタッフ</h3>
+            <p>
+                イベントを盛り上げるオープニングなどの映像を制作するスタッフを募集します<br>
+                Aviutl, Adobe AfterEffects, Premierなど、映像制作関連のソフトウェアが使える方のご応募をお待ちしています
+            </p>
+            <h3>イベント音響スタッフ</h3>
+            <p>
+                イベントの品質に関わる、音響を管理調整するスタッフを募集します<br>
+                イベント音響についてある程度の知識を持ち、イベントのストリーミング配信を踏まえたステージの配線が組める方の応募をお待ちしています
+            </p>
+            <h3>作曲スタッフ</h3>
+            <p>
+                イベントを盛り上げるオープニング映像や、会場内BGMを制作するスタッフを募集します<br>
+                制作した音源の著作権は作曲スタッフ自身に帰属するものとし、弊団体は本音源に関して非営利/営利を問わない恒久の使用権を持つものとします
+            </p>
+            <h3>システム開発スタッフ</h3>
+            <p>
+                イベントの運営や企画に必要なシステムの開発を担当するスタッフを募集します<br>
+                開発したシステムの制作実績は各サービスに公開可能とし、弊団体は当該システムの非営利/営利を問わない恒久の使用権を持ちます
+            </p>
+            <h2>応募は下のボタンから(Googleフォーム)</h2>
+            <a href="https://forms.gle/E3Jg7cXtjgkbZCwS7" class="btn">申し込む</a><br><br><br>
             <span class="close" onclick="$('.background').fadeOut(1000);$('.member').fadeOut(1000);"><i class="fas fa-window-close fa-4x"></i></span><br><br><br>
         </div>
     </body>
