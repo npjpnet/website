@@ -142,6 +142,10 @@ body {
     text-align: center;
 }
 
+.news {
+    color: white;
+}
+
 @media only screen and (max-width: 750px) {
     body {
         background: white;
@@ -199,6 +203,10 @@ body {
 
     #video {
         display: none;
+    }
+
+    .color {
+        color: black;
     }
 }
 
