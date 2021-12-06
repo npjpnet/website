@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <meta name="description" content="イベント管理・運営同人サークル「N-Point」のWebサイトです。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="N-Point" />
+        <meta property="og:title" content="Top" />
+        <meta property="og:description" content="イベント管理・運営同人サークル「N-Point」のWebサイトです。" />
+        <title>N-Point</title>
+
+        <!-- Program -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.min.js"></script>
+        <script type="text/javascript" src="js/typed.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $('.top-im').hide().fadeIn(1000);
+            });
+        </script>
+        <div id="video">
+            <iframe src="https://www.youtube.com/embed/OClj9inxqwM?playlist=O_x5WUaEAu0&autoplay=1&mute=1&loop=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <script>
+            var movieRatio = 16/9;  
+            function movieAdjust(){
+                var adjustWidth = $(window).width();
+                var adjustHeight = $(window).height();
+                if (adjustHeight > adjustWidth / movieRatio) {
+                    adjustWidth = adjustHeight * movieRatio;
+                }
+                $('iframe').css({width:(adjustWidth),height:(adjustWidth/movieRatio)});
+            }
+            $(window).on('load resize', function(){
+                movieAdjust();
+            });
+        </script>
+
+        <div class="top-im">
+            <img src="img/logo.png" width="auto" height="200px" /><br>
+            <font size="5"><span id="typed1"></span>を、作る</font><br>
+            <font size="10">N-Point</font><br><br>
+            <span class="aboutb" onclick="$('.background').hide().fadeIn(1000);$('.about').hide().fadeIn(1000);">About</span>&nbsp;<span class="memberb" onclick="$('.background').hide().fadeIn(1000);$('.member').hide().fadeIn(1000);">Member</span>&nbsp;<a href="http://blog.n-point.net/"><span class="memberb">Blog</span></a>
+            <br><br>
+        </div>
+        <script>
+            $(function() {
+                var typed1 = new Typed('#typed1', {
+                    strings: ["イベント", "ステージ", "笑顔", "発見", "知識", "盛り上がり", "笑い", "驚き", "つながり", "話題", "イベント運営", "思い出", "夢"],
+                    typeSpeed: 50,
+                    startDelay: 0,
+                    backSpeed: 50,
+                    backDelay: 500,
+                    loop: false,
+                    cursorChar: "|",
+                    contentType: 'html',
+                    smartBackspace: true,
+                    fadeOut: false,
+                    fadeOutClass: 'typed-fade-out',
+                    fadeOutDelay: 250
+                });
+            });
+        </script>
+        <div class="background">
+        </div>
+        <div class="about">
+            <h1>N-Point とは</h1>
+            <p>
+                私達「N-Point」は、<br>
+                イベント管理・運営専門同人サークルです。<br>
+                IT/ゲームに関するイベントを開催しています。<br>
+                また、イベント運営に必要なアプリなどの開発も行っています。<br>
+                主な活動場所: 東京都内
+            </p>
+            <h2>開催実績</h2>
+            <p>
+                2018年2月 MCC Talkoot<br>
+                2018年10月 Minecraft Coders Conference<br>
+                2018年10月 <a href="https://tento2018.peatix.com/?lang=ja" style="text-decoration: none; color: white;">TENTOプレゼン大会2018</a><br>
+                2019年4月 プログラミングLT 2019 Spring<br>
+                2019年8月 </a>プログラミングLT 2019 Summer<br>
+                2019年11月 マイフェス2019<br>
+                2020年3月 キャッシュレスカンファレンス2020<br>
+                2020年12月 マイフェス2020
+            </p>
+            <h2>問い合わせ先</h2>
+            <a href="https://twitter.com/npjpnet" class="btn">Twitter</a><br><br>
+            <span class="close" onclick="$('.background').fadeOut(1000);$('.about').fadeOut(1000);"><i class="fas fa-window-close fa-4x"></i></span>
+        </div>
+        <div class="member">
+            <h1>メンバー一覧</h1>
+            <img src="https://pbs.twimg.com/profile_images/1405108367887003655/9kCX32gt.jpg" class="samune">
+            <h3>なああよ(中込 椋)</h3>
+            <p>代表・映像音響チームリーダー</p>
+            <a href="https://twitter.com/moraqualitas" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>&nbsp;<a href="https://facebook.com/nakagomeryo" class="btn"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1084503528733732865/ojAir5Tp.jpg" class="samune">
+            <h3>りむむ</h3>
+            <p>総務部長・企画チーム</p>
+            <a href="https://twitter.com/rimumu_mu" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1401481198531080193/NOtHnFir.jpg" class="samune">
+            <h3>Latte</h3>
+            <p>総務部長代行・映像音響チーム</p>
+            <a href="https://twitter.com/DINER_PREIADES" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1388888538414870537/5MhgO8KM.jpg" class="samune">
+            <h3>えりおるん</h3>
+            <p>総務部 ロジスティクスチームリーダー</p>
+            <a href="https://twitter.com/agendateam2005" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1046776961400430592/lOcwZrFn.jpg" class="samune">
+            <h3>澤田 千代子</h3>
+            <p>監査</p>
+            <a href="https://twitter.com/ChiyokoSawada" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1387791274279768067/pjxtjbE4.jpg" class="samune">
+            <h3>あーさん</h3>
+            <p>企画チーム</p>
+            <a href="https://twitter.com/a_sann2" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1410094661834723331/FmNk8SgE_400x400.jpg" class="samune">
+            <h3>アジョッタ</h3>
+            <p>映像音響チーム</p>
+            <a href="https://twitter.com/ajyotta" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1385967035599908867/56cTQrN1.jpg" class="samune">
+            <h3>notoken</h3>
+            <p>NOC</p>
+            <a href="https://twitter.com/exp_noto" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1372377689424732162/vuzboCt5.jpg" class="samune">
+            <h3>塩味</h3>
+            <p>企画チーム</p>
+            <a href="https://twitter.com/shsh_2436_nade" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/988776889929031681/1tfLixVe.jpg" class="samune">
+            <h3>まみれいむ</h3>
+            <p>NOC・映像音響チーム</p>
+            <a href="https://twitter.com/mamireimu" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/870076318875959296/PbgJv3db.jpg" class="samune">
+            <h3>オツカワイパロ</h3>
+            <p>企画チーム</p>
+            <a href="https://twitter.com/ozkawa285" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/1406162344128892938/urFkzkJR.jpg" class="samune">
+            <h3>こばやん</h3>
+            <p>企画チーム</p>
+            <a href="https://twitter.com/chikuwa328" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <img src="https://pbs.twimg.com/profile_images/3762858914/6e54f8904ed69f1c527da5f1bed5bf64.jpeg" class="samune">
+            <h3>5971</h3>
+            <p>アドバイザー</p>
+            <a href="https://twitter.com/orbitalpiriod" class="btn"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><br><br><br>
+            <h3>batto231</h3>
+            <p>企画チーム</p>
+            <br><br><br>
+            <h3>スコッチ</h3>
+            <p>総務部</p>
+            <br><br><br>
+            <br><br><br>
+            <h1>メンバー募集中！</h1>
+            <p>
+                N-Pointで一緒に活動する仲間を随時募集しています。<br>
+            </p>
+            <h2>募集中の活動ジャンル</h2>
+            <h3>映像制作スタッフ</h3>
+            <p>
+                イベントを盛り上げるオープニングなどの映像を制作するスタッフを募集します<br>
+                Aviutl, Adobe AfterEffects, Premierなど、映像制作関連のソフトウェアが使える方のご応募をお待ちしています
+            </p>
+            <h3>イベント音響スタッフ</h3>
+            <p>
+                イベントの品質に関わる、音響機器を管理調整するスタッフを募集します<br>
+                イベント音響についてある程度の知識を持ち、イベントのストリーミング配信を踏まえたステージの配線が組める方の応募をお待ちしています
+            </p>
+            <h3>作曲スタッフ</h3>
+            <p>
+                イベントを盛り上げるオープニング映像や、会場内BGMを制作するスタッフを募集します<br>
+                制作した音源の著作権は作曲スタッフ自身に帰属するものとし、弊団体は本音源に関して非営利/営利を問わない恒久の使用権を持つものとします
+            </p>
+            <h3>システム開発スタッフ</h3>
+            <p>
+                イベントの運営や企画に必要なシステムの開発を担当するスタッフを募集します<br>
+                開発したシステムの制作実績は各サービスに公開可能とし、弊団体は当該システムの非営利/営利を問わない恒久の使用権を持ちます
+            </p>
+            <h2>詳しくはTwitterまでご連絡ください</h2>
+            <a href="https://twitter.com/npjpnet/" class="btn">申し込む</a><br><br><br>
+            <span class="close" onclick="$('.background').fadeOut(1000);$('.member').fadeOut(1000);"><i class="fas fa-window-close fa-4x"></i></span><br><br><br>
+        </div>
+    </body>
+</html>
